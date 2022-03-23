@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Roberto</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main class="contain">
+        
+        <h1 id="title">Formulario de Encuesta FreeCodeCamp</h1>
+        <p id="description">Gracias por tomarse el tiempo para ayudarnos a mejorar la plataforma</p>
+    
+        <form id="survey-form">
+            <div id="container">
+                <label id="name-label" for="name"><b>Nombre</b><label>
+                <input 
+                    id="name" 
+                    type="text"
+                    name="name"
+                    class="form-group"
+                    placeholder="Introduzca su Nombre"
+                    required>
+            </div>
+            <div id="container">
+                <label for="email" id="email-label"><b>Correo</b></label>
+                <input 
+                    id="email" 
+                    type="email"
+                    name="email"
+                    class="form-group"
+                    placeholder="Introduzca el Correo"
+                    required>
+            </div>
+            <div id="container">
+                <label for="number" id="number-label"><b>Edad</b><span class= "small"> (optional)</span></label>
+                <input id="number" type="number" name="number" class="form-group" placeholder="12" min="12" max="99">
+            </div>
+            <div id="container">
+                    <label for="role"><b>Seleccione su puesto actual</b></label><br>
+                    <select id="dropdown" name="role" class="select-option" required>
+                        <option value= "" selected="selected" disabled>Seleccione una opción</option>
+                        <option value="Student">Studiante</option>
+                        <option value="Part">Trabajo de media Jornada</option>
+                        <option value= "Full">Trabajo Jornada Completa</option>
+                        <option value= "NA">Prefiero no decir</option>
+                        <option value= "Other">Otros</option>
+                    </select>
+            </div>
+            <div id="container">
+                <label for="recommend"><b>¿Nos recomendaria a un amigo?</b></label><br>
+                <input type="radio" id="si" name="recommend" value="Sí"/>
+                <label for= "si">Sí</label><br>
+                <input type="radio" id="Quizas" name="recommend" value="Quizas"/>
+                <label for= "Quizas">Quizas</label><br>
+                <input type="radio" id="No" name="recommend" value="No"/>
+                <label for= "No">No estoy Seguro</label><br>
+            </div>
+            <div id="container-option">
+                <label for="role"><b>¿Cuál es tu característica favorita de freeCodeCamp?</b></label><br>
+                <select id="dropdown" name="role" class="select-option" required>
+                    <option value= "" selected="selected" disabled>Seleccione una opción</option>
+                    <option value="desafio">Desafio</option>
+                    <option value="proyectos">Proyectos</option>
+                    <option value= "comunidad">Comunidad</option>
+                    <option value= "abierto">Código Abierto</option>
+                </select>
+            <div id="container">
+                <label for="Improve"><b>¿Qué le gustaría ver mejorado?</b><span class= "small"> (Marque todo lo que corresponda)</span></label><br>
+                <input type="checkbox" id="Front" name="Improve" value="Front"/>
+                <label for= "Front">Front-End</label><br>
+                <input type="checkbox" id="Back"name="Improve" value="Back"/>
+                <label for= "Back">Back-End</label><br>
+                <input type="checkbox" id="Datos"name="Improve" value="Datos"/>
+                <label for= "Datos">Visualización de datos</label><br>
+                <input type="checkbox" id="Challenge"name="Improve" value="Challenge"/>
+                <label for= "Challenge">Desafíos</label><br>
+                <input type="checkbox" id="Open"name="Improve" value="Open"/>
+                <label for= "Open">Comunidad de código abierto</label><br>
+                <input type="checkbox" id="Gitter"name="Improve" value="Gitter"/>
+                <label for= "Gitter">Salas de ayuda de Gitter</label><br>
+                <input type="checkbox" id="Videos"name="Improve" value="Videos"/>
+                <label for= "Videos">Videos</label><br>
+                <input type="checkbox" id="Meet"name="Improve" value="Meet"/>
+                <label for= "Meet">Reuniones Presenciales</label><br>
+                <input type="checkbox" id="Wiki"name="Improve" value="Wiki"/>
+                <label for= "Wiki">Wiki</label><br>
+                <input type="checkbox" id="Foro"name="Improve" value="Foro"/>
+                <label for= "Foro">Foro</label><br>
+                <input type="checkbox" id="Cursos"name="Improve" value="Cursos"/>
+                <label for= "Cursos">Cursos Adicionales</label><br>
+            </div>
+            <div id="container-comment">
+                <label for="commentarios">¿Algún comentario o sugerencia?</label><br>
+                <textarea name="comentario" id="comentario" placeholder="Introduzca su Comentario"></textarea>
+            </div>
+
+            <button type="submit" id="submit">Enviar</button>
+        </div>
+        </form>
+    </main>
+</body>
+</html>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
